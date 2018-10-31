@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_margin="@dimen/_40sdp"
+        android:id="@+id/frg_option_ll"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="When do you want to delivery?"
+            android:textSize="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/day_today"
+                android:text="Mon(Today)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="Tue(Tomorrow)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <com.mealappclient.widget.LockableScrollView
+        android:id="@+id/activity_sign_up_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/act_sign_up_ll_age"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/act_sign_up_tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+               />
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:id="@+id/act_sign_up_rl_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+        <com.example.yudiz.wheel.WheelView
+            android:id="@+id/wheel_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp" />
+
+            <View
+                android:id="@+id/act_sign_up_wheel_age_view"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    </com.mealappclient.widget.LockableScrollView>
+
+        <View
+            android:background="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/btn_set_delivery_time"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_curv_orange"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="SET DELIVERY TIME"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp" />
+
+    </LinearLayout>
+</layout>

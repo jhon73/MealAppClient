@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+    <item
+        android:id="@+id/favourite"
+        android:icon="@drawable/favourite_icon"
+        android:title="Favourite" />
+    <item
+        android:id="@+id/order_history"
+        android:icon="@drawable/order_history_icon"
+        android:title="Order History" />
+
+    <item
+        android:id="@+id/restaurant"
+        android:icon="@drawable/restaurant_icon"
+        android:title="Restaurant" />
+    <item
+        android:id="@+id/payment"
+        android:icon="@drawable/payment_icon"
+        android:title="Payment" />
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/setting_icon"
+        android:title="Settings" />
+    <item
+        android:id="@+id/support"
+        android:icon="@drawable/support_icon"
+        android:title="Support" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout_icon"
+        android:title="Log out" />
+
+</menu>

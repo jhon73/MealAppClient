@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Enter verify code"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_16ssp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:src="@drawable/mail_message_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="You should be getting a text shortly"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="Enter Code here"
+                    android:textSize="@dimen/_14sdp" />
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/_70sdp"-->
+                    <!--android:layout_marginTop="@dimen/_20sdp"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/edt_first"-->
+                        <!--android:layout_width="@dimen/_50sdp"-->
+                        <!--android:layout_height="@dimen/_50sdp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:background="@drawable/rounded_circle_black"-->
+                        <!--android:gravity="center"-->
+                        <!--android:maxLength="1"-->
+                        <!--android:singleLine="true" >-->
+                        <!--<requestFocus></requestFocus>-->
+                    <!--</EditText>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/edt_second"-->
+                        <!--android:layout_width="@dimen/_50sdp"-->
+                        <!--android:layout_height="@dimen/_50sdp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--android:background="@drawable/rounded_circle_black"-->
+                        <!--android:gravity="center"-->
+                        <!--android:maxLength="1"-->
+                        <!--android:singleLine="true" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/edt_third"-->
+                        <!--android:layout_width="@dimen/_50sdp"-->
+                        <!--android:layout_height="@dimen/_50sdp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--android:background="@drawable/rounded_circle_black"-->
+                        <!--android:gravity="center"-->
+                        <!--android:maxLength="1"-->
+                        <!--android:singleLine="true" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/edt_fourth"-->
+                        <!--android:layout_width="@dimen/_50sdp"-->
+                        <!--android:layout_height="@dimen/_50sdp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginStart="@dimen/_10sdp"-->
+                        <!--android:background="@drawable/rounded_circle_black"-->
+                        <!--android:gravity="center"-->
+                        <!--android:maxLength="1"-->
+                        <!--android:singleLine="true" />-->
+                <!--</LinearLayout>-->
+
+                <com.goodiebag.pinview.Pinview
+                    android:id="@+id/pinview"
+                    app:pinBackground="@drawable/rounded_circle_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusable="true"
+                    app:pinWidth="@dimen/_40sdp"
+                    app:pinHeight="@dimen/_40sdp"
+                    app:pinLength="4"
+                    app:cursorVisible="true"
+                    app:forceKeyboard="false"
+                    app:hint=""
+                    app:inputType="number"
+                    app:password="false"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/rounded_curv_orange"
+                    android:gravity="center"
+                    android:text="VERIFY"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="Resend Code"
+                    android:textSize="@dimen/_16sdp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </ScrollView>
+</layout>

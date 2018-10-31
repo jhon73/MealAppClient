@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MealAppClient</string>
+
+    <string name="google_maps_key">AIzaSyC80L-SWlcJwKsfr5nQymOAA53Wd2t_F90</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="full_name">FULL NAME</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="email_address">EMAIL ADDRESS</string>
+    <string name="password">PASSWORD</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="new_user">New User?</string>
+
+    <string-array name="category">
+        <item>All Courses</item>
+        <item>Business</item>
+        <item>Politics</item>
+        <item>Sports</item>
+        <item>Technology</item>
+        <item>Movies</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_restaurant_detail_child"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_login"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_50sdp" />
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/img_restaurant_detail_child"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Margerita Pizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="Cheese and Tometo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_restaurant_child_price"
+                android:layout_alignParentBottom="true"
+                android:text="$99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/txt_restaurant_child_price"
+                android:src="@drawable/veg_icon"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15ssp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:textColor="@color/green"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:background="@drawable/square_search_view"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="ADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        app:ci_drawable="@drawable/rounded_circle_orange"
+        app:ci_drawable_unselected="@drawable/rounded_circle_gray" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:textSize="@dimen/_20ssp"
+        android:gravity="center"
+        android:text="Order from a wide range of restraurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_10ssp"
+        android:gravity="center"
+        android:text="Ready  to order from top restaurant?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/btn_get_started"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/white"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:text="GET STARTED"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_40sdp" />
+</LinearLayout>
+</layout>

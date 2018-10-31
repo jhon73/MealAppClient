@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="@dimen/_10sdp"-->
+            <!--android:layout_marginStart="@dimen/_10sdp"-->
+            <!--app:cardBackgroundColor="@color/white"-->
+            <!--app:cardCornerRadius="@dimen/_1sdp"-->
+            <!--app:cardElevation="1dp"-->
+            <!--app:cardUseCompatPadding="true">-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="PAYMENT OFFERS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fr_coupon_rv"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <!--<TextView-->
+                <!--android:gravity="center"-->
+                <!--android:text="Business card send is simply dummy text of the printing and typetesting industry.Lorem ispresm has been the industry's standards dummy text ever since the 1500s, When an unknown printer is look a gallery of type and scambled it make a type speciman book. "-->
+                <!--android:layout_margin="@dimen/_10sdp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+            </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+    </LinearLayout>
+</layout>
